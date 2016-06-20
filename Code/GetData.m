@@ -1,0 +1,22 @@
+function [G, L] = GetData()
+%% Data of the generation and Load
+% Generation data is obtained from 
+% A. J. Wood and B. F. Wollenberg: 
+% "Power Generation Operation and Control", 1984, John Wiley, New York
+
+L = [480];
+
+G.Pmin    = [25,60,75,20];                        %MW
+G.Pmax    = [80,250,300,60];                      %MW
+G.Fsc     = [350,400,600,500];                    %Cold startup cost
+G.Fsd     = [0,0,0,0];                            %Shut down cost
+G.IniState= [-5,8,8,-6];                          %Init Condition
+
+G.RampUp  = [50,80,100,80];                       %MW/h
+G.RampDown= [75,120,150,120];                     %MW/h
+
+G.Coef_a  = [970,700,680,800];                    %$
+G.Coef_b  = [17.26,16.60,16.50,19.70];            %$/MWh
+G.Coef_c  = [0.0031,0.0020,0.0021,0.0039];        %$/MWh^2
+
+end

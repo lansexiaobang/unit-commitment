@@ -1,0 +1,14 @@
+options.format = 'pdf';
+options.evalCode = false;
+publish('ED.m',options);
+publish('UnitTest.m',options);
+publish('sigmoid.m',options);
+publish('PriorityList.m',options);
+publish('PrintResult.m',options);
+publish('GetData.m',options);
+publish('fitness.m',options);
+publish('FeasibleStates.m',options);
+publish('DP.m',options);
+publish('PSO.m',options);
+publish('PL.m',options);
+publish('Enumerate.m',options);
